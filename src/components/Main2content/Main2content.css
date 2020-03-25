@@ -1,0 +1,39 @@
+.main2content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    grid-row: main2-start / main2-end;
+    grid-column: col-start 8 / col-end 11;
+}
+
+.mainContent__smallTitle{
+    color: var(--color-grey);
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.mainContent__title{
+    text-align: justify;
+    position: relative;
+    font-size: 3.2rem;
+    font-weight: 800;
+}
+
+.mainContent__text{
+    font-size: 1.8rem;
+    margin-top: 3rem;
+}
+
+/* Tablet portrait media */
+@media only screen and (max-width: 1100px){ 
+    .main2content{
+
+    display: block;
+    align-items: unset;
+    justify-content: unset;
+        grid-row: main2content-start / main2content-end;
+        grid-column: center-start / center-end;
+    }
+}

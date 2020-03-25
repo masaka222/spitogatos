@@ -1,0 +1,23 @@
+.main2picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    grid-row: main2-start / main2-end;
+    grid-column: center-start / col-end 6;
+}
+
+#image2{
+    height: auto;
+    width:  100%;
+}
+
+
+/* Tablet portrait media */
+@media only screen and (max-width: 1100px){ 
+    .main2picture{
+        grid-row: main2picture-start / main2picture-end;
+        grid-column: center-start / center-end;
+    }
+}
+

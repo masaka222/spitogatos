@@ -1,0 +1,42 @@
+.footer{
+    position: relative;
+    grid-column: 1 / -1;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_copyright{
+    position: absolute;
+    left: 7.2rem;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.footer-middleText{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.footer-line{
+    margin: 0 2rem;
+}
+
+.footer_logo{
+    position: absolute;
+    right: 7.2rem;
+}
+
+/* Tablet portrait media */
+@media only screen and (max-width: 1100px){ 
+    .footer{
+        grid-row: footer-start / footer-end;
+        grid-column: 1 / -1;
+    }
+    .footer-middleText{
+        display: none;
+    }
+}

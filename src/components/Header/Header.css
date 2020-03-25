@@ -1,0 +1,377 @@
+.header{
+    position: relative;
+    grid-column: 1 / -1;
+}
+
+.stickyheader{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 6.2rem;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_logo{
+    position: absolute;
+    top: 2.6rem;
+    left: 7.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-navigation{
+    display: flex;
+    
+}
+
+.header-navigation_text{
+    margin-right: 3.8rem;
+    margin-top: 1rem;
+    padding: 1.4rem .8rem 1.2rem .8rem;
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: #ffffff;
+
+    transition: color .3s cubic-bezier(0,0,0,.5);
+}
+
+.header-navigation_text:hover{
+    color: var(--color-green);
+}
+
+.is-active .header-navigation_text{
+    color: var(--color-green);
+    border-bottom: .8rem solid var(--color-green);
+}
+
+/* language and search section*/
+.header-langAndSearch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    right: 7.4rem;
+}
+
+.lang{
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: white;
+    margin-right: 5.7rem;
+}
+
+.lang-line{
+    color: var(--color-grey-dark);
+    margin: 0 .5rem 0 .5rem;
+}
+
+.lang-gr{
+    color: var(--color-grey-dark);
+    transition: color .3s cubic-bezier(0,0,0,.5);
+}
+
+.lang-gr:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.search__button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.search__button:focus{
+    outline: none;
+}
+
+.magnifyingGlass{
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Mobile Navigation */
+.mobile-navigation{
+    position: absolute;
+    right: 1.8rem;
+    visibility: hidden;
+}
+
+.mobile-navigation__checkbox{
+    display: none;
+}
+
+.mobile-navigation__icon{
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+/* modal */
+.modal{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%) ;
+    overflow-y: auto;
+}
+
+.x{
+    position: absolute;
+    top: 2.2rem;
+    right: 7.8rem;
+    z-index: 10;
+}
+
+.searchfield-form{
+    margin-left: 25.2rem;
+}
+
+.searchfield{
+    border: none;
+    font-size: 10rem;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    width: 80%;
+    height: 12rem;
+    padding-left: 5rem;
+    margin-top: 30.8rem;
+
+
+    /* To hide default styling */
+    -webkit-appearance: none;  
+    -moz-appearance:    none;
+    appearance:         none;
+}
+
+.searchfield::placeholder{
+    font-size: 10rem;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    color: #CFCFCF;
+    padding-left: 3rem;
+}
+
+.searchfield:focus{
+    outline: none;
+}
+
+#button-search{
+    width: 33.6rem;
+    height: 8.4rem;
+    font-size: 3.2rem;
+}
+
+.input-wrapper{
+    position: relative;
+    margin-bottom: 7.2rem;
+}
+
+.input-highlight {
+    font-size: 10rem;
+    font-weight: 800;
+    max-width: 80%;
+    border-top: 2rem solid var(--color-green);
+    position: absolute;
+    left: 2rem;
+    bottom: 0;
+    height: 0;  
+
+    color: transparent;
+    user-select: none;
+    overflow: hidden;
+
+    overflow-wrap: break-word;
+    z-index: 1;
+
+    transform: translateY(3rem);
+}
+
+.input-highlight-text{
+    border-top: 2rem solid var(--color-green);
+    display: inline;
+}
+
+.input-highlight2 {
+    font-size: 10rem;
+    font-weight: 800;
+    max-width: 80%;
+
+    position: absolute;
+    left: 4rem;
+    bottom: 0;
+    height: 11rem;  
+
+    color: transparent;
+    user-select: none;
+    overflow: hidden;
+    
+    transform: translateX(-2rem);
+}
+
+.input-highlight-text2{
+    border-right: 2rem solid black;
+    display: inline;
+}
+
+.input-highlight2 {
+    overflow-wrap: break-word;
+}
+
+
+/* React-modal */
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: all 500ms ease-in-out;
+  }
+  
+  .ReactModal__Overlay--after-open {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  
+  .ReactModal__Overlay--before-close {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1400px){
+    .header-navigation_text{
+        margin-right: 1rem;
+        font-size: 1.5rem;
+    }
+    .header-langAndSearch{
+        right: 7.4rem;
+    }
+    
+    .lang{
+        font-size: 1.9rem;
+        margin-right: 3rem;
+    }
+    .header_logo{
+        position: absolute;
+        top: 0.8rem;
+        left: 2.4rem;
+    }
+    .logo{
+        width: 4rem;
+        height: 4rem;
+    }
+    
+}
+
+/* Tablet portrait media */
+@media only screen and (max-width: 1100px){  
+    .header-navigation, .lang{
+        visibility: hidden;
+    }
+    .mobile-navigation{
+        visibility: visible;
+    }
+
+    /* modal */
+    .modal{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        right: auto;
+        bottom: auto;
+        transform: translate(-50%, -50%) ;
+        overflow-y: auto;
+    }
+
+    .x{
+        position: absolute;
+        top: 2.2rem;
+        right: 2.5rem;
+    }
+
+    .searchfield-form{
+        margin-left: 2.4rem;
+    }
+
+    .searchfield{
+        border: none;
+        font-size: 3rem;
+        font-weight: 800;
+
+        width: 80%;
+        height: 15rem;
+        padding-left: 2rem;
+        margin-top: 30.8rem;
+
+
+        /* To hide default styling */
+        -webkit-appearance: none;  
+        -moz-appearance:    none;
+        appearance:         none;
+    }
+
+    .searchfield::placeholder{
+        font-size: 3rem;
+        font-weight: 800;
+        color: #CFCFCF;
+        padding-left: 2rem;
+    }
+
+    .searchfield:focus{
+        outline: none;
+    }
+
+    #button-search{
+        width: 96%;
+    }
+
+    .input-highlight {
+        font-size: 3rem;
+        max-width: 77%;
+        border-top: 1rem solid var(--color-green);
+        height: 15rem; 
+
+        overflow-wrap: break-word;
+        z-index: 1;
+    }
+
+    .input-highlight-text{
+        border-top: 1rem solid var(--color-green);
+        display: inline;
+    }
+    
+    .input-highlight2 {
+        font-size: 3rem;
+        max-width: 77%;
+        border: none;
+        left: 2rem;
+        bottom: 12rem;
+        height: 3rem;  
+        
+        overflow-wrap: break-word;
+        transform: translateX(0rem);
+        overflow: visible;
+    }
+
+    .input-highlight-text2{
+        border-right: 1rem solid black;
+        display: inline;
+    }
+}

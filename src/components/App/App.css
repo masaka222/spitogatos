@@ -1,0 +1,42 @@
+:root{
+  --color-green:      #b4ff00;
+  --color-red:        #FF1A00;
+  --color-grey:       #CFCFCF;
+  --color-purple:     #4B00FF;  
+  --color-grey-dark:  #858585;
+  --color-grey-light: #F8F8F8;
+
+  --font-primary: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+  box-sizing: border-box;
+  font-size: 62.5%; /* So that 1rem = 10px (10px/16px (browsers default) = 62.5% -> 1rem = 10px */
+}
+
+body{
+  font-family: var(--font-primary);
+  font-weight: 300;
+  color: var(--color-primary);
+}
+
+.new-page-text{
+  font-size: 10rem;
+  font-weight: 800;
+  color: black;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.app{
+  overflow-y: hidden;
+}

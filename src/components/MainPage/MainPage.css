@@ -1,0 +1,16 @@
+.mainPage{
+    display: grid;
+    grid-template-rows: [main1-start] 100vh [main1-end main2-start] 60rem [main2-end main3-start] 60rem [main3-end main4-start] /*85vh*/114.4rem [main4-end footer-start] 4.8rem [footer-end]; 
+    grid-template-columns: [full-start] 1fr [center-start] repeat(12,  [col-start] minmax(min-content, 10rem) [col-end]) [center-end] 1fr [full-end];
+    column-gap: 2rem;
+    
+}
+
+
+/* Tablet portrait media */
+@media only screen and (max-width: 1100px){
+    .mainPage{
+        grid-template-rows: [main1-start] 50rem [main1-end main2picture-start] 50rem [main2picture-end main2content-start] 30rem [main2contend-end main3picture-start] 50rem [main3picture-end main3content-start] 30rem [main3content-end contact-start] 85rem [contact-end map-start] 40vh [map-end footer-start] 4.8rem [footer-end]; 
+        grid-template-columns: [full-start] 1fr [center-start] repeat(4,  [col-start] minmax(min-content, 10rem) [col-end]) [center-end] 1fr [full-end];
+    }
+}

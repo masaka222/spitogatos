@@ -1,0 +1,83 @@
+/* Header */
+.menu2-header{
+    height: 6rem;
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu2-header-title{
+    font-weight: 800;
+    font-size: 3.8rem;
+    color: white;
+}
+
+/* Navigation */
+.menu2-nav{
+    font-weight: 800;
+    font-size: 3.8rem;
+    color: black;
+    text-align: center;
+
+    margin-top: 4rem;
+    line-height: 6.8rem;
+}
+
+.lang-li{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 2.2rem;
+}
+
+#lang-gr2:hover{
+    color: black;
+}
+
+/* Footer */
+.menu2-footer{
+    height: 26.4rem;
+    background-color: var(--color-purple);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialButton{
+    margin: 3rem 1.5rem 3.7rem 1.5rem;
+}
+
+.menu2-cookies{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.menu2-info{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 5.5rem;
+    margin-left: 2.4rem;
+}
+
+#copyright{
+    margin-top: 2.6rem;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-height: 467px){ 
+    .menu2-footer{
+        position: static;
+        width: 10;
+        bottom: 0;
+    }
+}

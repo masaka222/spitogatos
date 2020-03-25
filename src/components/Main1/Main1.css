@@ -1,0 +1,130 @@
+.carousel{
+    grid-row: main1-start / main1-end;
+    grid-column: 1 / -1;
+    overflow: hidden;
+}
+
+.carousel-image{
+    max-width: 100%;
+    height: auto;
+}
+
+.page{
+    height: 100vh;
+    width: 100%;
+}
+
+.page-one{
+    background-image: url('../../assets/bricks.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-two{
+    background-color: grey;
+}
+
+.page-three{
+    background-color: teal;
+}
+
+.page-text{
+    position: absolute;
+    top: 41%;
+    left: 25.2rem;
+
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+}
+
+.mainTitle{
+    font-size: 10rem;
+}
+
+.titleBorder{
+    width: 9rem;
+    height: 1.6rem;
+    background-color: var(--color-green);
+
+    margin-top: 1.6rem;
+    margin-bottom: 7.2rem;
+}
+
+.paragraph{
+    width: 35%;
+}
+
+/* Swiper styles*/
+
+.swiper-pagination-bullet {
+    height: 1.6rem;
+    width: 1.6rem;
+    background: white !important;
+    opacity: 0.5 !important;
+
+    transition: all 0.2s linear 0s;
+}
+
+.swiper-pagination-bullet-active,
+.swiper-pagination-bullet:hover {
+    opacity: 1 !important;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1400px){
+/* text */
+.mainTitle{
+    font-size: 4rem;
+}
+
+.titleBorder{
+    width: 5rem;
+    height: 1rem;
+
+    margin-top: .8rem;
+    margin-bottom: 4.8rem;
+}
+
+.paragraph{
+    width: 90%;
+}
+}
+
+@media only screen and (max-width: 1100px){ 
+    .page{
+        height: 50rem;
+    }
+    .page-text{
+        position: absolute;
+        top: 30%;
+        left: 2rem;
+    
+        text-align: left;
+        font-size: 2rem;
+        font-weight: 800;
+        color: white;
+    }
+    
+}
+
+@media only screen and (max-height: 934px){
+    /* text */
+    .mainTitle{
+        font-size: 4rem;
+    }   
+
+    .titleBorder{
+        width: 5rem;
+        height: 1rem;
+
+        margin-top: .8rem;
+        margin-bottom: 4.8rem;
+    }
+
+    .paragraph{
+        width: 90%;
+    }
+}

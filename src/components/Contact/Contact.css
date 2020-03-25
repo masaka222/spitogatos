@@ -1,0 +1,173 @@
+.contactBackground{
+    background-color: var(--color-grey-light);
+    grid-row: main4-start/ main4-end;
+    grid-column: col-start 6 / full-end;
+}
+
+.contact{
+    background-color: var(--color-grey-light);
+    grid-row: main4-start/ main4-end;
+    grid-column: col-start 7 / col-end 12;
+}
+
+#contact-title{
+    margin-top: 10.3rem;
+}
+
+#contact-text{
+    margin-bottom: 4rem;
+}
+
+/* Lebel */
+.form-label{
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.form_group>label{
+    position:absolute;
+    left: 3rem;
+    top: -1.7rem;
+    background-color:var(--color-grey-light);
+}
+
+/* Form */
+.form_group{
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.form_input{
+    font-size: 1.6rem;
+    font-weight: 400;
+    border: .1rem solid black;
+    border-radius: 5rem;
+    height: 5.6rem;
+    width: 100%;
+    padding: 1rem 4rem;
+    background-color:var(--color-grey-light);
+
+    /* To hide default styling */
+    -webkit-appearance: none;  
+    -moz-appearance:    none;
+    appearance:         none;
+}
+
+.form_input:focus{
+    outline: none;
+    border: .2rem solid var(--color-purple);
+}
+
+.form_input:focus + .form-label {
+    color: var(--color-purple);
+}
+
+.form_input:focus:invalid{
+    border: .1rem solid var(--color-red);
+    color: var(--color-red);
+}
+
+#message{
+    border-radius: 3rem;
+    height: 11.2rem;
+}
+
+.dropdown{
+    
+}
+
+/* Error Message */
+.error-message{
+    text-align: end;
+    margin-top: .8rem;
+    margin-right: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: black;
+}
+
+.form_input:focus:invalid + .form-label {
+    color: var(--color-red);
+}
+
+.form_input:focus:invalid ~ .error-message {
+    visibility: hidden;
+}
+
+.form_input:focus:invalid ~ .error-message::after{
+    visibility: visible;
+    color: var(--color-red);
+    content: 'Error Message';
+}
+
+/* Button */
+.button{
+    border: none;
+    border-radius: 4rem;
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding: 1.7rem 8.8rem;
+    background-color: var(--color-purple);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    color: white;
+
+    transition: all 0.2s linear 0s;
+}
+
+.button:hover{
+    background-color: #4000db;
+    cursor: pointer;
+}
+
+/* CheckBox */
+.checkbox-button{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.checkbox-text{
+    font-size: 1.2rem;
+    padding-right: 8.3rem;
+    padding-left: 1.6rem;
+    transform: translateY(-1rem);
+}
+
+.checkbox-text > a {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/* Tablet portrait media */
+@media only screen and (max-width: 1100px){ 
+    .contactBackground{
+        grid-row: contact-start/ contact-end;
+        grid-column: 1 / -1;
+    }
+    .contact{
+        grid-row: contact-start/ contact-end;
+        grid-column: center-start / col-end 4;
+    }
+    .button{
+        padding: 1.3rem 4.3rem;
+    }
+    #contact_button{
+        width: 100%;
+    }
+    #contact-title{
+        margin-top: 4rem;
+    }
+    /* CheckBox */
+    .checkbox-button{
+        display: flex;
+        flex-direction: column;
+    }
+    .checkbox-text{
+        font-size: 1.2rem;
+        padding-bottom: 2rem;
+        padding-right: 0rem;
+        transform: translateY(-1.5rem);
+    }
+}

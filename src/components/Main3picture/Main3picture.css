@@ -1,0 +1,36 @@
+.main3picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    grid-row: main3-start / main3-end;
+    grid-column: col-start 8 / col-end 11;
+/*
+    margin-right: 25.2rem;
+    padding: 0 10rem 0 10rem;*/
+}
+
+#cushion{
+    height: auto;
+    width:  100%;
+    transition: 0.2s;
+}
+
+#cushion:hover {
+    transition: 0.2s;
+    transform: rotate(180deg);
+}
+
+
+/* Tablet portrait media */
+@media only screen and (max-width: 1100px){ 
+    .main3picture{
+        grid-row: main3picture-start / main3picture-end;
+        grid-column: center-start / col-end 4;
+    }
+
+    #cushion{
+        height: auto;
+        width:  65%;
+    }
+}
